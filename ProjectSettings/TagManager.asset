@@ -42,6 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Characters
+  - name: Ground
     uniqueID: 546681761
+    locked: 0
+  - name: Objects
+    uniqueID: 2707505715
+    locked: 0
+  - name: Characters
+    uniqueID: 3073641491
     locked: 0

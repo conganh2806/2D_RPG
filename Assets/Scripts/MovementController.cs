@@ -7,7 +7,7 @@ using UnityEngine;
 public class MovementController : MonoBehaviour
 {
 
-    private float movementSpeed = 3.0f;
+    [SerializeField] private float movementSpeed = 3.0f;
 
     private Vector2 movement = new Vector2();
     private bool isFacingRight = false;
@@ -16,6 +16,8 @@ public class MovementController : MonoBehaviour
 
     private Animator animator;
     private string animationState = "isRunning";
+
+
 
 
     private void Start()
@@ -28,15 +30,17 @@ public class MovementController : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        Debug.Log(movement.x + " " + movement.y);
-        UpdateState();
+        
 
+        Flip(movement);
+        
     }
 
     private void FixedUpdate()
     {
         movement.Normalize();
         rb2D.velocity = movement * movementSpeed;
+        //Debug.Log(rb2D.velocity.x + " " + rb2D.velocity.y);
     }
 
 
@@ -52,21 +56,9 @@ public class MovementController : MonoBehaviour
         }
     }
 
-    private void UpdateState()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        bool condition;
-        if(movement.x != 0f)
-        {
-            condition = true;
-            animator.SetBool(animationState, condition);
-            Flip(movement);
-        }
-        else
-        {
-            condition = false;
-            animator.SetBool(animationState, condition);
-        }
+        Debug.Log("Triggered!");
     }
-
 
 }
