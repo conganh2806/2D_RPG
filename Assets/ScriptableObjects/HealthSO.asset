@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8edb8c8e87e4c374eb0731dfd9ae278b, type: 3}
-  m_Name: HeartSO
+  m_Name: HealthSO
   m_EditorClassIdentifier: 
-  objectName: Heart
+  objectName: Health
   sprite: {fileID: 115985194, guid: a1e87d572a8137043b60dbc577ddd24b, type: 3}
-  quantity: 1
+  quantity: 10
   stackable: 0
   itemType: 1

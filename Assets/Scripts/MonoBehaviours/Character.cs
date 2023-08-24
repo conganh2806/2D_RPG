@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public float hitPoints;
+    public HitPoints hitPoints;
     public float maxHitPoints;
+    public float startingHitPoints;
 
 }

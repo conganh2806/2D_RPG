@@ -14,20 +14,25 @@ public class Player : Character
     private Rigidbody2D rb2D;
     private Animator animator;
 
+    public HealthBar healthBarPrefab;
 
-
+    HealthBar healthBar;
 
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        hitPoints.value = startingHitPoints;
+        healthBar = Instantiate(healthBarPrefab);
+
+        healthBar.character = this;
     }
 
     private void Update()
     {
-
-
         HandleMovement();
+
         
     }
 
@@ -67,16 +72,25 @@ public class Player : Character
 
             if(hitObject != null)
             {
+                bool shouldDisappear = false;   
                 switch(hitObject.itemType)
                 {
+
                     case Item.ItemType.COIN:
                         //do something when hit coin
+                        shouldDisappear = true;
                         break;
                     case Item.ItemType.HEALTH:
                         //adjust hitpoint when hit health
-                        AdjustHitPoints(hitObject.quantity);
-                        collision.gameObject.SetActive(false);
+                        shouldDisappear = AdjustHitPoints(hitObject.quantity);
                         break;
+                    default:
+                        break;
+                }
+
+                if(shouldDisappear)
+                {
+                    collision.gameObject.SetActive(false);
                 }
 
             }
@@ -88,15 +102,18 @@ public class Player : Character
         }
     }
 
-    private void AdjustHitPoints(int quantity)
-    {
-        if(hitPoints < maxHitPoints)
+    private bool AdjustHitPoints(int quantity)
+    {  
+
+        if (hitPoints.value < maxHitPoints)
         {
             Debug.Log("Current hitpoint: " + hitPoints);
-            hitPoints += quantity;
+            hitPoints.value += quantity;
             Debug.Log("Adjust hitpoint by " + quantity + " new value: " + hitPoints);
+            return true;
         }
-       
+
+        return false;
     }
 
         

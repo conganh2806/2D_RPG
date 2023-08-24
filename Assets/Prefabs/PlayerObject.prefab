@@ -47,6 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95bd2bc07672ee84dbfbd4a0e1288462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitPoints: {fileID: 11400000, guid: 5fc0e7f3056773f4b8bf3577a3c46fa4, type: 2}
+  maxHitPoints: 100
+  startingHitPoints: 70
   gameInput: {fileID: 0}
   movementSpeed: 3
 --- !u!61 &4599287976664022209
