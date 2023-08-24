@@ -52,6 +52,8 @@ MonoBehaviour:
   startingHitPoints: 70
   gameInput: {fileID: 0}
   movementSpeed: 3
+  healthBarPrefab: {fileID: 4104304008846048280, guid: 104a11eae4a517f4d889ed5369a5aad8, type: 3}
+  inventoryPrefab: {fileID: 4866576617204494329, guid: d5d56f84616c69d47826d7955f34f452, type: 3}
 --- !u!61 &4599287976664022209
 BoxCollider2D:
   m_ObjectHideFlags: 0

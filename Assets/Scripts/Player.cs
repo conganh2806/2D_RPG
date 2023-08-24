@@ -18,6 +18,10 @@ public class Player : Character
 
     HealthBar healthBar;
 
+    [SerializeField] private Inventory inventoryPrefab;
+
+    Inventory inventory;
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -25,6 +29,8 @@ public class Player : Character
 
         hitPoints.value = startingHitPoints;
         healthBar = Instantiate(healthBarPrefab);
+
+        inventory = Instantiate(inventoryPrefab);
 
         healthBar.character = this;
     }
@@ -78,7 +84,7 @@ public class Player : Character
 
                     case Item.ItemType.COIN:
                         //do something when hit coin
-                        shouldDisappear = true;
+                        shouldDisappear = inventory.AddItem(hitObject);
                         break;
                     case Item.ItemType.HEALTH:
                         //adjust hitpoint when hit health
