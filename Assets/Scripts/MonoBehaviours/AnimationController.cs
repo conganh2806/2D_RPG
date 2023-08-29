@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AnimationController : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class AnimationController : MonoBehaviour
    
     private string animationState = "AnimationState";
 
-    [SerializeField] private GameInput gameInput;
+    [SerializeField] private InputActionReference moveInput;
     private Rigidbody2D rb2d;
 
     private enum CharStates
@@ -30,7 +31,7 @@ public class AnimationController : MonoBehaviour
 
     private void Update()
     {
-        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
+        Vector2 inputVector = moveInput.action.ReadValue<Vector2>();
 
 
         if (inputVector.x > 0)

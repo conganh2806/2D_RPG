@@ -50,7 +50,7 @@ MonoBehaviour:
   hitPoints: {fileID: 11400000, guid: 5fc0e7f3056773f4b8bf3577a3c46fa4, type: 2}
   maxHitPoints: 100
   startingHitPoints: 70
-  gameInput: {fileID: 0}
+  moveInput: {fileID: 4235819545292025131, guid: bf4da956c2ed8ae40a125642f456ac59, type: 3}
   movementSpeed: 3
   healthBarPrefab: {fileID: 4104304008846048280, guid: 104a11eae4a517f4d889ed5369a5aad8, type: 3}
   inventoryPrefab: {fileID: 4866576617204494329, guid: d5d56f84616c69d47826d7955f34f452, type: 3}
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97deb06f2e802794697c5d6c5be08716, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameInput: {fileID: 0}
+  moveInput: {fileID: 4235819545292025131, guid: bf4da956c2ed8ae40a125642f456ac59, type: 3}
 --- !u!95 &6011517747267572735
 Animator:
   serializedVersion: 5

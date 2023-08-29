@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : Character
 {
 
-    [SerializeField] private GameInput gameInput;
+    [SerializeField] private InputActionReference moveInput;
 
     [SerializeField] private float movementSpeed = 3.0f;
-    
+
+    [SerializeField] private HitPoints hitPoints;
+
     private Rigidbody2D rb2D;
     private Animator animator;
 
-    public HealthBar healthBarPrefab;
+    [SerializeField] private HealthBar healthBarPrefab;
 
     HealthBar healthBar;
 
@@ -27,12 +30,8 @@ public class Player : Character
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
-        hitPoints.value = startingHitPoints;
-        healthBar = Instantiate(healthBarPrefab);
-
-        inventory = Instantiate(inventoryPrefab);
-
-        healthBar.character = this;
+        ResetCharacter();
+        
     }
 
     private void Update()
@@ -57,11 +56,12 @@ public class Player : Character
 
     private void HandleMovement()
     {
-        Vector2 inputVector = gameInput.GetMovementVectorNormalized();  
+        Vector2 inputVector = moveInput.action.ReadValue<Vector2>();   
+       
 
         Vector3 moveDir = new Vector2(inputVector.x, inputVector.y);
 
-        //Debug.Log(moveDir.x + " " + moveDir.y);
+        Debug.Log(moveDir.x + " " + moveDir.y);
 
         float moveDistance = movementSpeed * Time.deltaTime;
 
@@ -122,6 +122,45 @@ public class Player : Character
         return false;
     }
 
-        
+    public override void ResetCharacter()
+    {
+        healthBar = Instantiate(healthBarPrefab);
+
+        inventory = Instantiate(inventoryPrefab);
+
+        healthBar.character = this;
+        hitPoints.value = startingHitPoints;
+    }
+
+    public override IEnumerator DamageCharacter(int damage, float interval)
+    {
+        while(true)
+        {
+            hitPoints.value = hitPoints.value - damage;
+            if(hitPoints.value < float.Epsilon)
+            {
+                KillCharacter();
+                break;
+            }
+            if(interval > float.Epsilon)
+            {
+                yield return new WaitForSeconds(interval);
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+
+    public override void KillCharacter()
+    {
+        base.KillCharacter();
+
+        Destroy(healthBar.gameObject);
+        Destroy(inventory.gameObject);
+    }
+
+
 
 }

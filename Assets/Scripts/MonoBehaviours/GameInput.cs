@@ -1,25 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class GameInput : MonoBehaviour
 {
-    private PlayerInputActions playerInputActions;
+    //private PlayerInputActions playerInputActions;
 
-    private void Awake()
-    {
-        playerInputActions = new PlayerInputActions();
-        playerInputActions.Player.Enable();
-    }
-
-
-    public Vector2 GetMovementVectorNormalized()
-    {
-        Vector2 inputVector = playerInputActions.Player.Move.ReadValue<Vector2>();
+    //private void Awake()
+    //{
+    //    playerInputActions = new PlayerInputActions();
+    //    playerInputActions.Player.Enable();
+    //}
 
 
-        inputVector = inputVector.normalized;
+    //public Vector2 GetMovementVectorNormalized()
+    //{
+    //    Vector2 inputVector = playerInputActions.Player.Move.ReadValue<Vector2>();
 
-        return inputVector;
-    }
+
+    //    inputVector = inputVector.normalized;
+
+    //    return inputVector;
+    //}
 }
