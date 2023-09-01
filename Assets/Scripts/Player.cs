@@ -61,7 +61,7 @@ public class Player : Character
 
         Vector3 moveDir = new Vector2(inputVector.x, inputVector.y);
 
-        Debug.Log(moveDir.x + " " + moveDir.y);
+        //Debug.Log(moveDir.x + " " + moveDir.y);
 
         float moveDistance = movementSpeed * Time.deltaTime;
 

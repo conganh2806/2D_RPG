@@ -9,6 +9,9 @@ public class Enemy : Character
     [SerializeField] private float damageInterval = 1.0f;
     Coroutine damageCoroutine;
 
+    private Vector2 lastPosition;
+    private bool isFacingRight;
+
     public override IEnumerator DamageCharacter(int damage, float interval)
     {
         while(true)
@@ -42,6 +45,11 @@ public class Enemy : Character
         ResetCharacter();   
     }
 
+    private void Update()
+    {
+        Flip();
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))
@@ -52,8 +60,12 @@ public class Enemy : Character
             {
                 
                 damageCoroutine = StartCoroutine(player.DamageCharacter(damageStrength, damageInterval));
+         
+            
             }
         }
+
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -67,6 +79,33 @@ public class Enemy : Character
             }
         }
     }
+
+    
+
+
+    private void Flip()
+    {
+        Vector2 currentPosition = transform.position;
+
+        if(currentPosition != lastPosition)
+        {
+            if(!isFacingRight && currentPosition.x - lastPosition.x < 0 || isFacingRight && currentPosition.x - lastPosition.x > 0)
+            {
+                isFacingRight = !isFacingRight;
+                Vector2 localScale = transform.localScale;
+                localScale.x *= -1f;
+                transform.localScale = localScale;
+            }
+          
+        }
+
+
+        lastPosition = currentPosition;
+
+    }
+
+
+    
 
 
 }
