@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,19 +6,12 @@ public class AnimationController : MonoBehaviour
 
     private Animator animator;
    
-    private string animationState = "AnimationState";
+    
 
     [SerializeField] private InputActionReference moveInput;
     private Rigidbody2D rb2d;
 
-    private enum CharStates
-    {
-        walkEast = 1,
-        walkWest = 2,
-        walkNorth = 3,
-        walkSouth = 4,  
-        idle = 5,
-    }
+    
 
     private void Awake()
     {
@@ -34,29 +24,20 @@ public class AnimationController : MonoBehaviour
         Vector2 inputVector = moveInput.action.ReadValue<Vector2>();
 
 
-        if (inputVector.x > 0)
+        if(Mathf.Approximately(inputVector.x, 0) && Mathf.Approximately(inputVector.y, 0) )
         {
-            animator.SetInteger(animationState, 1);
-            //Debug.Log("Character is running!");
-        }
-        else if (inputVector.x < 0)
-        {
-            animator.SetInteger(animationState, 2);
-            //Debug.Log("Character is idling!");
-        }
-        else if (inputVector.y > 0)
-        {
-            animator.SetInteger(animationState, 3);
-
-        }
-        else if (inputVector.y < 0)
-        {
-            animator.SetInteger(animationState, 4);
+            animator.SetBool("isWalking", false);
         }
         else
         {
-            animator.SetInteger(animationState, 5);
+            animator.SetBool("isWalking", true);
+
+
         }
+
+
+        animator.SetFloat("xDir", inputVector.x);
+        animator.SetFloat("yDir", inputVector.y);
 
 
     }

@@ -120,16 +120,25 @@ TextureImporter:
       name: OutdoorsObjects_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
+        x: 6
+        y: 132
+        width: 22
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 3, y: 8.5}
+        - {x: -9, y: 8.5}
+        - {x: -11, y: 5.5}
+        - {x: -11, y: -6.5}
+        - {x: -8, y: -7.5}
+        - {x: -5, y: -7.5}
+        - {x: -3, y: -8.5}
+        - {x: 11, y: -8.5}
+        - {x: 11, y: 0.5}
+      tessellationDetail: 1
       bones: []
       spriteID: 20d4cfae654b2c149b3faaf55444a9fd
       internalID: 1810491108
@@ -141,16 +150,24 @@ TextureImporter:
       name: OutdoorsObjects_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
+        x: 35
+        y: 141
+        width: 16
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 8, y: 2}
+        - {x: 5, y: 5}
+        - {x: -4, y: 5}
+        - {x: -7, y: 3}
+        - {x: -8, y: 2}
+        - {x: -8, y: -4}
+        - {x: -7, y: -5}
+        - {x: 8, y: -5}
+      tessellationDetail: 1
       bones: []
       spriteID: 66734934bf540e642b3883f4d105a075
       internalID: 554627354
@@ -162,16 +179,27 @@ TextureImporter:
       name: OutdoorsObjects_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
+        x: 66
+        y: 131
+        width: 29
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 14.5, y: -6.5}
+        - {x: 14.5, y: 3.5}
+        - {x: 13.5, y: 5.5}
+        - {x: 9.5, y: 9.5}
+        - {x: -7.5, y: 9.5}
+        - {x: -13.5, y: 5.5}
+        - {x: -14.5, y: 2.5}
+        - {x: -14.5, y: -8.5}
+        - {x: -13.5, y: -9.5}
+        - {x: 6.5, y: -9.5}
+        - {x: 9.5, y: -8.5}
+      tessellationDetail: 1
       bones: []
       spriteID: f2ba356190eb8fd4aa87501a74e5267e
       internalID: 29783279
@@ -183,12 +211,12 @@ TextureImporter:
       name: OutdoorsObjects_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
+        x: 100
+        y: 133
+        width: 26
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -204,16 +232,47 @@ TextureImporter:
       name: OutdoorsObjects_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
+        x: 4
+        y: 104
+        width: 27
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 0.5, y: -7.5}
+        - {x: 2.5, y: -6.5}
+        - {x: 8.5, y: -9.5}
+        - {x: 11.5, y: -9.5}
+        - {x: 13.5, y: -7.5}
+        - {x: 12.5, y: -3.5}
+        - {x: 13.5, y: -1.5}
+        - {x: 11.5, y: 0.5}
+        - {x: 13.5, y: 0.5}
+        - {x: 13.5, y: 5.5}
+        - {x: 12.5, y: 6.5}
+        - {x: 10.5, y: 6.5}
+        - {x: 8.5, y: 8.5}
+        - {x: 6.5, y: 8.5}
+        - {x: 5.5, y: 9.5}
+        - {x: 1.5, y: 9.5}
+        - {x: 0.5, y: 8.5}
+        - {x: -0.5, y: 8.5}
+        - {x: -1.5, y: 9.5}
+        - {x: -10.5, y: 9.5}
+        - {x: -13.5, y: 6.5}
+        - {x: -12.5, y: 4.5}
+        - {x: -13.5, y: 3.5}
+        - {x: -13.5, y: -4.5}
+        - {x: -11.5, y: -4.5}
+        - {x: -12.5, y: -8.5}
+        - {x: -11.5, y: -9.5}
+        - {x: -8.5, y: -9.5}
+        - {x: -5.5, y: -6.5}
+        - {x: -4.5, y: -6.5}
+        - {x: -3.5, y: -7.5}
+      tessellationDetail: 1
       bones: []
       spriteID: 486127ae646dd1d44b8f4dec30aeb927
       internalID: -296181019
@@ -225,16 +284,26 @@ TextureImporter:
       name: OutdoorsObjects_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 38
+        y: 103
+        width: 17
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 6.5, y: 6}
+        - {x: 5.5, y: 6}
+        - {x: 4.5, y: 8}
+        - {x: -7.5, y: 8}
+        - {x: -8.5, y: 7}
+        - {x: -8.5, y: -7}
+        - {x: -7.5, y: -8}
+        - {x: 6.5, y: -8}
+        - {x: 8.5, y: -5}
+        - {x: 8.5, y: 4}
+      tessellationDetail: 1
       bones: []
       spriteID: 4057408ea958fbf48945b3daf654de9d
       internalID: 1281579673
@@ -246,15 +315,20 @@ TextureImporter:
       name: OutdoorsObjects_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
+        x: 72
+        y: 104
+        width: 17
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8.5, y: 8}
+        - {x: -8.5, y: -8}
+        - {x: 8.5, y: -8}
+        - {x: 8.5, y: 6}
+        - {x: 7.5, y: 8}
       tessellationDetail: 0
       bones: []
       spriteID: b8e8919d3f2dfa94bbf5e86912b2821f
@@ -267,16 +341,26 @@ TextureImporter:
       name: OutdoorsObjects_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
+        x: 104
+        y: 103
+        width: 17
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 6.5, y: 6}
+        - {x: 5.5, y: 6}
+        - {x: 4.5, y: 8}
+        - {x: -7.5, y: 8}
+        - {x: -8.5, y: 7}
+        - {x: -8.5, y: -3}
+        - {x: -7.5, y: -8}
+        - {x: 6.5, y: -8}
+        - {x: 8.5, y: -5}
+        - {x: 8.5, y: 4}
+      tessellationDetail: 1
       bones: []
       spriteID: ccfee59ca62f6084d8f8962259fa96ca
       internalID: 1801316738
@@ -288,16 +372,66 @@ TextureImporter:
       name: OutdoorsObjects_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
+        x: 3
+        y: 34
+        width: 28
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 10, y: -29.5}
+        - {x: 11, y: -28.5}
+        - {x: 10, y: -26.5}
+        - {x: 10, y: -22.5}
+        - {x: 13, y: -20.5}
+        - {x: 14, y: -19.5}
+        - {x: 14, y: -13.5}
+        - {x: 12, y: -11.5}
+        - {x: 12, y: -9.5}
+        - {x: 14, y: -8.5}
+        - {x: 14, y: -0.5}
+        - {x: 13, y: 0.5}
+        - {x: 14, y: 1.5}
+        - {x: 13, y: 3.5}
+        - {x: 14, y: 4.5}
+        - {x: 14, y: 8.5}
+        - {x: 12, y: 11.5}
+        - {x: 14, y: 12.5}
+        - {x: 14, y: 16.5}
+        - {x: 13, y: 17.5}
+        - {x: 14, y: 18.5}
+        - {x: 14, y: 21.5}
+        - {x: 11, y: 24.5}
+        - {x: 12, y: 25.5}
+        - {x: 12, y: 27.5}
+        - {x: 10, y: 29.5}
+        - {x: -9, y: 29.5}
+        - {x: -10, y: 28.5}
+        - {x: -13, y: 24.5}
+        - {x: -13, y: 22.5}
+        - {x: -14, y: 21.5}
+        - {x: -14, y: 15.5}
+        - {x: -13, y: 15.5}
+        - {x: -14, y: 14.5}
+        - {x: -14, y: 11.5}
+        - {x: -13, y: 9.5}
+        - {x: -14, y: 7.5}
+        - {x: -13, y: 6.5}
+        - {x: -13, y: 3.5}
+        - {x: -12, y: 1.5}
+        - {x: -14, y: -0.5}
+        - {x: -14, y: -6.5}
+        - {x: -13, y: -6.5}
+        - {x: -14, y: -8.5}
+        - {x: -14, y: -22.5}
+        - {x: -8, y: -29.5}
+        - {x: 0, y: -29.5}
+        - {x: 2, y: -28.5}
+        - {x: 2, y: -26.5}
+        - {x: 5, y: -29.5}
+      tessellationDetail: 1
       bones: []
       spriteID: e15d0e8c472c23241be9ef6632773893
       internalID: 607407132
@@ -309,15 +443,224 @@ TextureImporter:
       name: OutdoorsObjects_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 31
+        y: 0
+        width: 97
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -32.5, y: -48}
+        - {x: -27.5, y: -47}
+        - {x: -26.5, y: -48}
+        - {x: -23.5, y: -48}
+        - {x: -21.5, y: -46}
+        - {x: -20.5, y: -46}
+        - {x: -16.5, y: -48}
+        - {x: -15.5, y: -47}
+        - {x: -12.5, y: -48}
+        - {x: -11.5, y: -47}
+        - {x: -10.5, y: -48}
+        - {x: -7.5, y: -48}
+        - {x: -6.5, y: -47}
+        - {x: -5.5, y: -48}
+        - {x: -1.5, y: -47}
+        - {x: -1.5, y: -48}
+        - {x: 4.5, y: -48}
+        - {x: 4.5, y: -46}
+        - {x: 8.5, y: -48}
+        - {x: 9.5, y: -47}
+        - {x: 10.5, y: -48}
+        - {x: 13.5, y: -48}
+        - {x: 14.5, y: -47}
+        - {x: 18.5, y: -47}
+        - {x: 20.5, y: -48}
+        - {x: 23.5, y: -48}
+        - {x: 24.5, y: -47}
+        - {x: 26.5, y: -47}
+        - {x: 27.5, y: -48}
+        - {x: 31.5, y: -48}
+        - {x: 33.5, y: -46}
+        - {x: 34.5, y: -46}
+        - {x: 38.5, y: -48}
+        - {x: 39.5, y: -47}
+        - {x: 43.5, y: -47}
+        - {x: 47.5, y: -45}
+        - {x: 48.5, y: -40}
+        - {x: 48.5, y: -28}
+        - {x: 45.5, y: -25}
+        - {x: 48.5, y: -23}
+        - {x: 48.5, y: -20}
+        - {x: 45.5, y: -18}
+        - {x: 47.5, y: -16}
+        - {x: 47.5, y: -13}
+        - {x: 48.5, y: -11}
+        - {x: 46.5, y: -9}
+        - {x: 47.5, y: -8}
+        - {x: 46.5, y: -6}
+        - {x: 48.5, y: -4}
+        - {x: 48.5, y: -2}
+        - {x: 45.5, y: 2}
+        - {x: 45.5, y: 4}
+        - {x: 47.5, y: 7}
+        - {x: 48.5, y: 12}
+        - {x: 46.5, y: 15}
+        - {x: 48.5, y: 17}
+        - {x: 48.5, y: 35}
+        - {x: 46.5, y: 37}
+        - {x: 48.5, y: 40}
+        - {x: 48.5, y: 45}
+        - {x: 44.5, y: 48}
+        - {x: 40.5, y: 48}
+        - {x: 39.5, y: 47}
+        - {x: 37.5, y: 47}
+        - {x: 36.5, y: 48}
+        - {x: 33.5, y: 48}
+        - {x: 28.5, y: 47}
+        - {x: 27.5, y: 48}
+        - {x: 24.5, y: 48}
+        - {x: 23.5, y: 47}
+        - {x: 21.5, y: 48}
+        - {x: 10.5, y: 48}
+        - {x: 9.5, y: 47}
+        - {x: 8.5, y: 48}
+        - {x: 6.5, y: 47}
+        - {x: 5.5, y: 48}
+        - {x: 0.5, y: 48}
+        - {x: -1.5, y: 46}
+        - {x: -3.5, y: 46}
+        - {x: -6.5, y: 48}
+        - {x: -12.5, y: 48}
+        - {x: -17.5, y: 47}
+        - {x: -19.5, y: 48}
+        - {x: -22.5, y: 48}
+        - {x: -23.5, y: 47}
+        - {x: -25.5, y: 47}
+        - {x: -26.5, y: 48}
+        - {x: -30.5, y: 48}
+        - {x: -32.5, y: 46}
+        - {x: -33.5, y: 46}
+        - {x: -37.5, y: 48}
+        - {x: -38.5, y: 47}
+        - {x: -42.5, y: 47}
+        - {x: -46.5, y: 45}
+        - {x: -47.5, y: 40}
+        - {x: -48.5, y: 39}
+        - {x: -48.5, y: 32}
+        - {x: -46.5, y: 31}
+        - {x: -48.5, y: 29}
+        - {x: -48.5, y: 27}
+        - {x: -45.5, y: 25}
+        - {x: -46.5, y: 23}
+        - {x: -46.5, y: 19}
+        - {x: -45.5, y: 18}
+        - {x: -45.5, y: 13}
+        - {x: -46.5, y: 11}
+        - {x: -44.5, y: 9}
+        - {x: -45.5, y: 8}
+        - {x: -44.5, y: 6}
+        - {x: -46.5, y: 4}
+        - {x: -46.5, y: 2}
+        - {x: -43.5, y: -2}
+        - {x: -43.5, y: -4}
+        - {x: -45.5, y: -8}
+        - {x: -44.5, y: -9}
+        - {x: -46.5, y: -11}
+        - {x: -46.5, y: -12}
+        - {x: -45.5, y: -14}
+        - {x: -47.5, y: -16}
+        - {x: -47.5, y: -18}
+        - {x: -46.5, y: -19}
+        - {x: -48.5, y: -21}
+        - {x: -48.5, y: -23}
+        - {x: -47.5, y: -25}
+        - {x: -48.5, y: -26}
+        - {x: -48.5, y: -29}
+        - {x: -46.5, y: -31}
+        - {x: -48.5, y: -33}
+        - {x: -48.5, y: -34}
+        - {x: -45.5, y: -37}
+        - {x: -48.5, y: -42}
+        - {x: -48.5, y: -44}
+        - {x: -43.5, y: -48}
+        - {x: -39.5, y: -48}
+        - {x: -38.5, y: -47}
+        - {x: -36.5, y: -47}
+        - {x: -35.5, y: -48}
+      - - {x: -8.5, y: -20}
+        - {x: -9.5, y: -19}
+        - {x: -11.5, y: -19}
+        - {x: -12.5, y: -20}
+        - {x: -14.5, y: -20}
+        - {x: -16.5, y: -18}
+        - {x: -15.5, y: -16}
+        - {x: -18.5, y: -12}
+        - {x: -16.5, y: -10}
+        - {x: -16.5, y: -9}
+        - {x: -18.5, y: -7}
+        - {x: -16.5, y: -5}
+        - {x: -16.5, y: -4}
+        - {x: -18.5, y: -2}
+        - {x: -18.5, y: -3}
+        - {x: -15.5, y: 0}
+        - {x: -15.5, y: 1}
+        - {x: -19.5, y: 5}
+        - {x: -17.5, y: 8}
+        - {x: -18.5, y: 9}
+        - {x: -16.5, y: 11}
+        - {x: -16.5, y: 12}
+        - {x: -17.5, y: 14}
+        - {x: -14.5, y: 17}
+        - {x: -14.5, y: 20}
+        - {x: -15.5, y: 22}
+        - {x: -12.5, y: 20}
+        - {x: -11.5, y: 21}
+        - {x: -9.5, y: 19}
+        - {x: -8.5, y: 19}
+        - {x: -6.5, y: 21}
+        - {x: -4.5, y: 19}
+        - {x: -3.5, y: 19}
+        - {x: -1.5, y: 21}
+        - {x: -2.5, y: 21}
+        - {x: 0.5, y: 18}
+        - {x: 1.5, y: 18}
+        - {x: 5.5, y: 22}
+        - {x: 8.5, y: 20}
+        - {x: 9.5, y: 21}
+        - {x: 11.5, y: 19}
+        - {x: 12.5, y: 19}
+        - {x: 14.5, y: 21}
+        - {x: 17.5, y: 18}
+        - {x: 16.5, y: 16}
+        - {x: 20.5, y: 12}
+        - {x: 18.5, y: 10}
+        - {x: 18.5, y: 9}
+        - {x: 20.5, y: 7}
+        - {x: 18.5, y: 5}
+        - {x: 18.5, y: 4}
+        - {x: 20.5, y: 2}
+        - {x: 20.5, y: 3}
+        - {x: 17.5, y: 0}
+        - {x: 17.5, y: -1}
+        - {x: 21.5, y: -5}
+        - {x: 19.5, y: -8}
+        - {x: 20.5, y: -9}
+        - {x: 18.5, y: -11}
+        - {x: 18.5, y: -12}
+        - {x: 20.5, y: -14}
+        - {x: 14.5, y: -19}
+        - {x: 14.5, y: -20}
+        - {x: 11.5, y: -19}
+        - {x: 9.5, y: -21}
+        - {x: 8.5, y: -20}
+        - {x: 6.5, y: -21}
+        - {x: 4.5, y: -19}
+        - {x: 2.5, y: -19}
+        - {x: -1.5, y: -22}
+        - {x: -3.5, y: -22}
+        - {x: -4.5, y: -21}
       tessellationDetail: 0
       bones: []
       spriteID: 3f0b7fbdf3a5da54f91246b4999573ff
@@ -330,229 +673,83 @@ TextureImporter:
       name: OutdoorsObjects_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 129
+        y: 12
+        width: 30
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
-      tessellationDetail: 0
+      physicsShape:
+      - - {x: 5, y: -37}
+        - {x: 8, y: -40}
+        - {x: 9, y: -40}
+        - {x: 11, y: -38}
+        - {x: 11, y: -33}
+        - {x: 14, y: -34}
+        - {x: 15, y: -33}
+        - {x: 15, y: -22}
+        - {x: 13, y: -20}
+        - {x: 13, y: -17}
+        - {x: 14, y: -15}
+        - {x: 12, y: -13}
+        - {x: 13, y: -12}
+        - {x: 12, y: -10}
+        - {x: 14, y: -8}
+        - {x: 14, y: -6}
+        - {x: 11, y: -2}
+        - {x: 11, y: 0}
+        - {x: 13, y: 3}
+        - {x: 14, y: 8}
+        - {x: 12, y: 12}
+        - {x: 15, y: 14}
+        - {x: 15, y: 31}
+        - {x: 14, y: 32}
+        - {x: 15, y: 35}
+        - {x: 11, y: 40}
+        - {x: 3, y: 39}
+        - {x: 2, y: 40}
+        - {x: -5, y: 40}
+        - {x: -4, y: 36}
+        - {x: -6, y: 36}
+        - {x: -7, y: 37}
+        - {x: -12, y: 37}
+        - {x: -15, y: 34}
+        - {x: -15, y: 33}
+        - {x: -12, y: 31}
+        - {x: -15, y: 28}
+        - {x: -15, y: 10}
+        - {x: -13, y: 8}
+        - {x: -15, y: 6}
+        - {x: -15, y: 5}
+        - {x: -13, y: 3}
+        - {x: -15, y: 1}
+        - {x: -15, y: 0}
+        - {x: -13, y: -2}
+        - {x: -15, y: -3}
+        - {x: -15, y: -6}
+        - {x: -12, y: -8}
+        - {x: -14, y: -12}
+        - {x: -13, y: -13}
+        - {x: -15, y: -15}
+        - {x: -15, y: -16}
+        - {x: -13, y: -18}
+        - {x: -13, y: -19}
+        - {x: -15, y: -21}
+        - {x: -15, y: -28}
+        - {x: -13, y: -29}
+        - {x: -13, y: -33}
+        - {x: -10, y: -36}
+        - {x: -8, y: -35}
+        - {x: -6, y: -40}
+        - {x: -1, y: -40}
+        - {x: 0, y: -39}
+        - {x: 2, y: -40}
+      tessellationDetail: 1
       bones: []
       spriteID: 7aaea0ab076f2e44db3a90960b494f6f
       internalID: -1761422534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OutdoorsObjects_11
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: edf8796fa2bba68479e93bf4683ff0d0
-      internalID: 1114997481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OutdoorsObjects_12
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70eb096412e8bab4a983389445a37d03
-      internalID: -1678696100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OutdoorsObjects_13
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdcc062025c2d6246891ca597da3a048
-      internalID: -1851226441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OutdoorsObjects_14
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0049119c5f772434badf7bd95227a401
-      internalID: -810378057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OutdoorsObjects_15
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 752280b9b4d2c4c4d8315cbda43a26d8
-      internalID: -1705749245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OutdoorsObjects_16
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 465faac10fdc1514ebc7d3ad3c1c2ce6
-      internalID: 1401006817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OutdoorsObjects_17
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d4bec701cc6e65478cffaa81a7caee2
-      internalID: 1600285743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OutdoorsObjects_18
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ff5cd40b255eb64da10f2532e8089f2
-      internalID: 798894069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OutdoorsObjects_19
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c6670d9616115e499080d2a4d48b7ef
-      internalID: 265233374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OutdoorsObjects_20
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f60cebd895708444a593bad53888dc7
-      internalID: 1110387383
       vertices: []
       indices: 
       edges: []
@@ -571,17 +768,7 @@ TextureImporter:
       OutdoorsObjects_0: 1810491108
       OutdoorsObjects_1: 554627354
       OutdoorsObjects_10: -1761422534
-      OutdoorsObjects_11: 1114997481
-      OutdoorsObjects_12: -1678696100
-      OutdoorsObjects_13: -1851226441
-      OutdoorsObjects_14: -810378057
-      OutdoorsObjects_15: -1705749245
-      OutdoorsObjects_16: 1401006817
-      OutdoorsObjects_17: 1600285743
-      OutdoorsObjects_18: 798894069
-      OutdoorsObjects_19: 265233374
       OutdoorsObjects_2: 29783279
-      OutdoorsObjects_20: 1110387383
       OutdoorsObjects_3: -880541779
       OutdoorsObjects_4: -296181019
       OutdoorsObjects_5: 1281579673

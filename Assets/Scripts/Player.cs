@@ -1,7 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
+using System.Runtime.CompilerServices;
+using TreeEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -25,6 +24,7 @@ public class Player : Character
 
     Inventory inventory;
 
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -34,12 +34,13 @@ public class Player : Character
         
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
+        
         HandleMovement();
-
         
     }
+    
 
     //This function is used to flip sprite of character but not use for this anymore
     //private void Flip(Vector2 movement)
@@ -61,12 +62,15 @@ public class Player : Character
 
         Vector3 moveDir = new Vector2(inputVector.x, inputVector.y);
 
+
         //Debug.Log(moveDir.x + " " + moveDir.y);
 
         float moveDistance = movementSpeed * Time.deltaTime;
 
 
         transform.position += moveDir * moveDistance;
+        
+
     }
 
 
@@ -136,6 +140,7 @@ public class Player : Character
     {
         while(true)
         {
+            StartCoroutine(FlickerCharacter());
             hitPoints.value = hitPoints.value - damage;
             if(hitPoints.value < float.Epsilon)
             {
@@ -160,6 +165,8 @@ public class Player : Character
         Destroy(healthBar.gameObject);
         Destroy(inventory.gameObject);
     }
+
+   
 
 
 

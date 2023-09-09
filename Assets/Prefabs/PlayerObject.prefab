@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 449196140885747036}
   - component: {fileID: 4599287976664022209}
   - component: {fileID: 7847422269698479634}
-  - component: {fileID: 4444630702395957371}
   m_Layer: 8
   m_Name: PlayerObject
   m_TagString: Player
@@ -68,7 +67,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00004002452, y: -0.41023254}
+  m_Offset: {x: -0.016471654, y: -0.38368917}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -79,7 +78,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.51584774, y: 0.246948}
+  m_Size: {x: 0.6296051, y: 0.30003476}
   m_EdgeRadius: 0
 --- !u!50 &7847422269698479634
 Rigidbody2D:
@@ -94,7 +93,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 10
+  m_LinearDrag: 10.03
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -102,21 +101,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &4444630702395957371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3582877276843928662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ca711129aed124096f5232b0d99695, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammoPrefab: {fileID: 6532232944505590960, guid: 828c5294b09fb6e48994f2eb0ba5dae0, type: 3}
-  poolSize: 10
-  weaponVelocity: 2
 --- !u!1 &3582877277269080862
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +113,7 @@ GameObject:
   - component: {fileID: 3582877277269080860}
   - component: {fileID: 4592281412978461191}
   - component: {fileID: 6011517747267572735}
+  - component: {fileID: 5980355971705684360}
   m_Layer: 8
   m_Name: PlayerVisual
   m_TagString: Untagged
@@ -236,3 +221,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &5980355971705684360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3582877277269080862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ca711129aed124096f5232b0d99695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6011517747267572735}
+  ammoPrefab: {fileID: 6532232944505590960, guid: 828c5294b09fb6e48994f2eb0ba5dae0, type: 3}
+  poolSize: 5
+  weaponVelocity: 2
